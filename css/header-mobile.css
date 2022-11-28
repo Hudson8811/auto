@@ -1,0 +1,156 @@
+.header-mobile {
+	width: 100%;
+	position: fixed;
+	height: 47px;
+}
+.header-mobile .mobile-main {
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-mobile .mobile-main .logo-box {
+	width: calc(100% - 100px);
+}
+.header-mobile .mobile-main .logo-box .logo {
+	margin: 0 8px;
+}
+.header-mobile .mobile-main .logo-box .logo>div:first-child {
+	width: auto;
+}
+.header-mobile .mobile-main .logo-box .logo>div:last-child {
+	padding-left: 10px;
+	line-height: 10px;
+}
+
+
+.header-mobile .mobile-main .btn-menu {
+	width: 50px;
+	margin: 0 8px;
+}
+.header-mobile .catalog-menu-btn {
+	display: block;
+	background-color: #fff;
+	background-image: url(/assets/images/ico/car-open.svg);
+	box-shadow: none;
+	width: 40px;
+	height: 32px;
+}
+
+.header-mobile .mobile-main .btn-call {
+	border-left: 1px solid #efefef;
+	width: 50px;
+	padding: 0 8px;
+}
+.header-mobile .mobile-main .btn-call a {
+	display: block;
+	height: 36px;
+	width: 32px;
+	padding: 0 10px;
+	background-image: url(/assets/images/ico/call-green.svg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: 32px;
+}
+
+#burger {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	margin: 0 auto;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+#burger,
+#burger span {
+	transform: rotate(0deg);
+}
+#burger span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #333;
+	border-radius: 2px;
+	opacity: 1;
+	left: 0;
+	transition: .25s ease-in-out;
+}
+#burger span:first-child {
+	top: 4px;
+}
+#burger span:nth-child(2),
+#burger span:nth-child(3) {
+	top: 14px;
+}
+#burger span:nth-child(4) {
+	top: 24px;
+}
+#burger.open span:first-child {
+	top: 14px;
+	width: 0;
+	left: 50%;
+}
+#burger.open span:nth-child(2) {
+	transform: rotate(45deg);
+}
+#burger.open span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+#burger.open span:nth-child(4) {
+	top: 14px;
+	width: 0;
+	left: 50%;
+}
+
+
+
+.header-mobile .mobile-main .btn-menu {
+	width: 50px;
+	margin: 0 8px;
+}
+
+
+
+
+.header-mobile .mobile-menu {
+	display: none;
+	border-bottom: 1px solid #cacaca;
+	background: #fafafa;
+}
+.header-mobile .mobile-menu .addres {
+	margin: 10px 0 15px;
+}
+.header-mobile .mobile-menu ul.main-menu {
+	flex-wrap: wrap;
+}
+.header-mobile .mobile-menu ul.main-menu li {
+	width: 100%;
+}
+.header-mobile .mobile-menu ul.main-menu li a,
+.header-mobile .mobile-menu ul.main-menu li span {
+	display: block;
+	padding: 10px;
+	font-family: Roboto, sans-serif;
+	color: #000;
+	border-bottom: 1px dotted #eaeaea;
+}
+
+.header-mobile .mobile-menu .phones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.header-mobile .mobile-menu .phones .phone {
+	margin: 0;
+}
+
+
+
+
+@media (min-width: 767.02px) {
+	.header-mobile {
+		display: none;
+	}
+}

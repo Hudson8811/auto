@@ -1,0 +1,66 @@
+/* brands */
+.main-brands .brands {
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-brands .brands .brand {
+	margin-bottom: 10px;
+	width: 8.3%;
+}
+.main-brands .brands .brand>a {
+	border: 1px solid #eaeaea;
+	margin: 3px;
+	border-radius: 2px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	font-size: 12px;
+	color: #000;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: flex-end;
+}
+.main-brands .brands .brand>a .brand-logo {
+	width: 42px;
+	text-align: center;
+}
+.main-brands .brands .brand>a .brand-logo img {
+	width: 100%;
+	height: auto;
+}
+.main-brands .brands .brand>a .brand-name {
+	width: 100%;
+	text-align: center;
+}
+.main-brands .brands .brand>a:hover {
+	border-color: #b71c1c;
+	color: #b71c1c;
+}
+@media (max-width: 1023px) {
+	.main-brands .brands .brand {
+		width: 12.5%;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-brands .brands .brand {
+		margin-bottom: 5px;
+		width: 14.2%;
+	}
+
+	.main-brands .brands .brand>a {
+		margin: 2px;
+		font-size: 10px;
+	}
+
+	.main-brands .brands .brand>a .brand-logo {
+		width: 24px;
+	}
+}
+@media (max-width: 575px){
+	.main-brands .brands .brand {
+		width: 20%;
+	}
+}

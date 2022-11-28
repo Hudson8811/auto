@@ -1,0 +1,114 @@
+.model-cards-mini,
+.model-cards-mini-price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.model-cards-mini-price .model-card-mini,
+.model-cards-mini .model-card-mini {
+	position: relative;
+	width: 25%;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner,
+.model-cards-mini .model-card-mini .model-card--inner {
+	border-radius: 2px;
+	border: 1px solid #d3d3d3;
+	margin: 5px;
+	padding: 12px 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner a,
+.model-cards-mini .model-card-mini .model-card--inner a {
+	display: block;
+	text-decoration: none;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner .col-first .title,
+.model-cards-mini .model-card-mini .model-card--inner .col-first .title {
+	font-size: 18px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #000;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner .col-first .title:after,
+.model-cards-mini .model-card-mini .model-card--inner .col-first .title:after {
+	display: block;
+	margin-top: 3px;
+	content: "";
+	height: 4px;
+	width: 40px;
+	border-radius: 4px;
+	background: #b71c1c;
+}
+
+.model-cards-mini-price .model-card-mini .model-card--inner .col-first .image,
+.model-cards-mini .model-card-mini .model-card--inner .col-first .image {
+	padding-top: 15px;
+	min-height: 130px;
+	text-align: center;
+}
+
+.model-cards-mini-price .model-card-mini .model-card--inner .col-second>div,
+.model-cards-mini .model-card-mini .model-card--inner .col-second>div {
+	padding-left: 26px;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner .col-second .cash,
+.model-cards-mini .model-card-mini .model-card--inner .col-second .cash {
+	width: 130px;
+	background-repeat: no-repeat;
+	background-size: 22px;
+	background-position: 0 0;
+	background-image: url(/assets/images/ico/rub.svg);
+}
+
+.model-cards-mini-price .model-card-mini .model-card--inner .col-second>div label,
+.model-cards-mini .model-card-mini .model-card--inner .col-second>div label {
+	display: block;
+	color: #787878;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 4px 0;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner .col-second>div span,
+.model-cards-mini .model-card-mini .model-card--inner .col-second>div span {
+	display: block;
+}
+
+.model-cards-mini-price .model-card-mini .model-card--inner:hover,
+.model-cards-mini .model-card-mini .model-card--inner:hover {
+	transition: .4s;
+	box-shadow: 0 2px 4px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+.model-cards-mini-price .model-card-mini .model-card--inner:hover .title:after,
+.model-cards-mini .model-card-mini .model-card--inner:hover .title:after {
+	width: 80px;
+	transition: .5s;
+}
+.model-cards-mini-price .model-card-mini .model-card--inner .col-first .image img,
+.model-cards-mini .model-card-mini .model-card--inner .col-first .image img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+	max-width: 200px;
+}
+
+@media (max-width: 1023px){
+	.model-cards-mini-price .model-card-mini,
+	.model-cards-mini .model-card-mini {
+		width: 33%;
+	}
+}
+@media (max-width: 767px){
+	.model-cards-mini-price .model-card-mini,
+	.model-cards-mini .model-card-mini {
+		width: 50%;
+	}
+}
+@media (max-width: 490px){
+	.model-cards-mini-price .model-card-mini,
+	.model-cards-mini .model-card-mini {
+		width: 100%;
+	}
+}

@@ -1,0 +1,48 @@
+.catalog-menu,
+.header-menu,
+.header-mobile,
+.header-scroll {
+	z-index: 200;
+}
+
+.header-scroll {
+	width: 100%;
+	background: #fff;
+	top: 0;
+	position: fixed;
+	box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+	transition: all .1s ease;
+}
+.header-scroll .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px 8px;
+}
+
+.header-scroll .inner .open-callback {
+	width: 300px;
+}
+.header-scroll .inner .open-callback form {
+	display: flex;
+	justify-content: space-between;
+}
+.header-scroll .inner .open-callback form .field-phone {
+	width: 140px;
+	margin-right: 3px;
+}
+.header-scroll .inner .open-callback form .field-phone input {
+	padding-left: 10px;
+}
+.header-scroll .inner .open-callback form .field-btn {
+	width: calc(100% - 143px);
+}
+.header-scroll .inner .open-callback form .form-field .btn {
+	width: 100%;
+}
+@media (max-width: 767px){
+	.header-scroll {
+		display: none;
+	}
+}
