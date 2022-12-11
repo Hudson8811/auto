@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	background-image: url(/assets/images/img/girl-credit.png);
+	background-image: url(../assets/images/img/girl-credit.png);
 	background-repeat: no-repeat;
 	background-position: right 320px bottom;
 	background-size: contain;
@@ -77,7 +77,7 @@
 	margin: 10px 0;
 	font-size: 17px;
 	font-weight: 500;
-	background-image: url(/assets/images/ico/ok-green.svg);
+	background-image: url(../assets/images/ico/ok-green.svg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: 16px;
@@ -114,7 +114,7 @@
 
 .banner-max-sale {
 	padding: 40px 8px;
-	background-image: url(/assets/images/img/girl-max-sale.png);
+	background-image: url(../assets/images/img/girl-max-sale.png);
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	background-size: contain;
@@ -166,7 +166,7 @@
 }
 
 .banner-question {
-	background-image: url(/assets/images/aksa/girl-question.png);
+	background-image: url(../assets/images/aksa/girl-question.png);
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	background-size: contain;
@@ -212,7 +212,7 @@
 }
 
 .banner-gift {
-	background-image: url(/assets/images/img/girl-max-sale.png);
+	background-image: url(../assets/images/img/girl-max-sale.png);
 	background-repeat: no-repeat;
 	background-position: right 250px bottom;
 	background-size: contain;
@@ -262,7 +262,7 @@
 	font-size: 15px;
 	font-weight: 400;
 	padding: 10px 0 10px 40px;
-	background-image: url(/assets/images/ico/fast-time.svg);
+	background-image: url(../assets/images/ico/fast-time.svg);
 	background-repeat: no-repeat;
 	background-position: 0
 }
@@ -278,7 +278,7 @@
 }
 
 .banner-gift .form .form-dscr {
-	background-image: url(/assets/images/ico/coupon.svg)
+	background-image: url(../assets/images/ico/coupon.svg)
 }
 
 .banner {
@@ -337,7 +337,7 @@
 	font-size: 15px;
 	font-weight: 500;
 	padding-left: 34px;
-	background-image: url(/assets/images/ico/send-red.svg);
+	background-image: url(../assets/images/ico/send-red.svg);
 	background-position: 0;
 	background-repeat: no-repeat;
 	background-size: 24px;
@@ -437,7 +437,7 @@
 		order: 1;
 		padding: 1em 0 0;
 		display: block;
-		background-image: url(/assets/images/img/tradin-car.png);
+		background-image: url(../assets/images/img/tradin-car.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: bottom
@@ -471,7 +471,7 @@
 
 .banner-tradein .image {
 	width: calc(100% - 610px);
-	background-image: url(/assets/images/img/tradin-car.png);
+	background-image: url(../assets/images/img/tradin-car.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 50%
@@ -543,7 +543,7 @@
 }
 
 .banner-winter-tire {
-	background-image: url(/assets/images/img/winter-tire-bg.jpg);
+	background-image: url(../assets/images/img/winter-tire-bg.jpg);
 	max-height: 230px;
 	padding: 0 20px
 }
@@ -663,6 +663,11 @@
 	flex-wrap: wrap;
 	justify-content: space-between
 }
+@media (max-width:1023px) {
+	.model-cards .model-card .model-card--inner{
+		position:relative;
+	}
+}
 
 @media (max-width:575px) {
 	.model-cards .model-card .model-card--inner {
@@ -704,7 +709,7 @@
 @media (max-width:1023px) {
 	.model-cards .model-card .model-card--inner .col-first {
 		width: 100%;
-		position: relative
+		position: static !important;
 	}
 }
 
@@ -742,8 +747,8 @@
 	.model-cards .model-card .model-card--inner .col-first .price {
 		text-align: right;
 		position: absolute;
-		bottom: -45px;
-		left: 0;
+		bottom: 10px;
+		left: 20px;
 		text-align: left
 	}
 }
@@ -760,7 +765,8 @@
 
 @media (max-width:1023px) {
 	.model-cards .model-card .col-second {
-		width: 100%
+		width: 100%;
+		padding-bottom:20px;
 	}
 }
 
@@ -802,7 +808,7 @@
 }
 
 .model-cards .model-card .col-second .box-buttons button.btn-tradein span {
-	background-image: url(/assets/images/ico/tradein-r.svg)
+	background-image: url(../assets/images/ico/tradein-r.svg)
 }
 
 @media (max-width:1023px) {
@@ -1277,7 +1283,7 @@
 	background-repeat: no-repeat;
 	background-size: 22px;
 	background-position: 0 0;
-	background-image: url(/assets/images/ico/rub.svg)
+	background-image: url(../assets/images/ico/rub.svg)
 }
 
 @media (max-width:575px) {
@@ -1300,7 +1306,7 @@
 	background-repeat: no-repeat;
 	background-size: 22px;
 	background-position: left top 5px;
-	background-image: url(/assets/images/ico/credit-red.svg)
+	background-image: url(../assets/images/ico/credit-red.svg)
 }
 
 @media (max-width:575px) {
@@ -1687,7 +1693,7 @@
 	background-position: 0;
 	background-repeat: no-repeat;
 	background-size: 14px;
-	background-image: url(/assets/images/ico/gar.svg);
+	background-image: url(../assets/images/ico/gar.svg);
 	line-height: 22px;
 	font-weight: 300
 }
@@ -1704,7 +1710,7 @@
 	background-position: 0;
 	background-repeat: no-repeat;
 	background-size: 14px;
-	background-image: url(/assets/images/ico/ok-green.svg);
+	background-image: url(../assets/images/ico/ok-green.svg);
 	padding-right: 22px
 }
 
@@ -2193,7 +2199,7 @@
 }
 
 .page-brand .brand-first {
-	background-image: url(/assets/images/img/brand-bg2.jpg);
+	background-image: url(../assets/images/img/brand-bg2.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom
 }
